@@ -20,4 +20,6 @@ export class Task {
   @ManyToOne((_type) => User, (user) => user.tasks, { eager: false })
   @Exclude({ toPlainOnly: true })
   user: User;
+
+  // console.log ....
 }
